@@ -129,16 +129,40 @@ p{
     font-size: 18px;
     max-width: 300px;
   }
-  .projectdesc{
-    max-width: 300px;
+}
+.project1, .project2, .project3 {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 100px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .project1, .project2, .project3 {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 90px;
+  }
+  .projectdesc {
+    max-width: 80%;
     font-size: 18px;
+    line-height: 2;
+    text-align: center;
+  }
+  .projectimg {
+    width: 100%;
+    height: auto;
+  }
+  .buttons {
+    gap: 24px;
+    flex-wrap: wrap;
   }
 }
-.divider{}
+.divider{
   color: #A288A6;
   height: 25px;
   background-color: #A288A6;
   border: none;
+}
 .underline{
   height: 3px;
   background-color: #FFFFFF;
