@@ -322,6 +322,9 @@ h2{
   gap: 100px;
   padding-bottom: 30px;
 }
+button{
+  color: #ffffff;
+}
 .left{
   border-radius: 50px;
   color: #FFFFFF;
