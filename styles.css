@@ -32,6 +32,10 @@
   cursor: pointer;
   color: #FFFFFF;
 }
+.close-btn {
+  display: none;
+}
+
 a{
   text-decoration: none;
   color: #FFFFFF;
@@ -45,10 +49,28 @@ a{
     right: 20px;
     background-color: #A288A6;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.35);
+    border-radius: 10px;
+    z-index: 10;
   }
   .navigationlink.show {
     display: flex; 
+  }
+  .navigationlink .close-btn {
+    display: block;                
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 8px;                   
+  }
+  .navigationlink.show { 
+    padding-top: 44px; 
   }
   .hamburger {
     display: block;
@@ -198,26 +220,64 @@ h1{
   gap: 100px;
   padding: 50px;
 }
-.frontend{
-  background-color: #A288A6;
-  padding: 20px 70px;
-  border-radius: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-align: center;
+.skill-card { 
+  perspective: 1000px; 
+  width: 250px; 
+  height: 250px;
+  border-radius: 50px; 
+  cursor: pointer; 
+  }
+.card-inner { 
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
+  transition: transform 0.6s; 
+  transform-style: preserve-3d; 
+  border-radius: 50px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
 }
-.backend{
-  background-color: #7B5D87;
-  border-radius: 50px;
-  padding: 30px 80px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-align: center;
+.skill-card:hover .card-inner { 
+  transform: rotateY(180deg); 
+} 
+.card-face { 
+  position: absolute; 
+  inset: 0; 
+  padding: 10px 28px;
+  border-radius: 50px; 
+  backface-visibility: hidden; 
+  display: grid; 
+  place-content: center; 
+  text-align: center; 
 }
-.design{
-  background-color: #AE899F;
-  border-radius: 50px;
-  padding: 20px 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-align: center;
+.frontend{ 
+  background:#A288A6; 
+  color:#fff; 
+}
+.design{ 
+  background:#AE899F; 
+  color:#fff; 
+}
+.backend{ 
+  background:#7B5D87; 
+  color:#fff; 
+}
+.frontend-back{ 
+  background:#8E7597; 
+  color:#fff; 
+  transform: rotateY(180deg); 
+}
+.design-back{ 
+  background:#997487; 
+  color:#fff; 
+  transform: rotateY(180deg); 
+}
+.skillstitle{
+  font-size: 28px;
+}
+.backend-back{ 
+  background:#6B4E76; 
+  color:#fff; 
+  transform: rotateY(180deg); 
 }
 .smalltext{
   padding-top: 30px;
