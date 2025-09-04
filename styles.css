@@ -196,8 +196,8 @@ p{
   border: none;
 }
 h1{
-  padding-bottom: 5px;
-  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-top: 40px;
 }
 .mainbody{
   display: flex;
@@ -328,6 +328,7 @@ h2{
   background-color: #7B5D87;
   border: none;
   padding: 20px 80px;
+  margin: 10px;
   font-size: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -367,4 +368,17 @@ h5{
   .skills {
     flex: 1 1 100%; 
   }
+}
+.navigationlink .close-btn {
+  color: #fff !important;
+  -webkit-text-fill-color: #ffffff;  
+  text-shadow: 0 0 0 #ffffff;        
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
 }
