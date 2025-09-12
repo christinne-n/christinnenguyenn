@@ -30,3 +30,8 @@ document.querySelectorAll('.skill-card').forEach(card => {
     if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
   });
 });
+
+document.querySelectorAll('a[href]').forEach(link => {
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer');
+  });
