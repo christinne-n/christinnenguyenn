@@ -266,10 +266,19 @@ h1{
   background:#7B5D87; 
   color:#fff; 
 }
+.framework{
+  color: #fff;
+  background: #946c84;
+}
 .frontend-back{ 
   background:#8E7597; 
   color:#fff; 
   transform: rotateY(180deg); 
+}
+.framework-back{
+  background:#815671;
+  color:#fff;
+  transform: rotateY(180deg);
 }
 .design-back{ 
   background:#997487; 
