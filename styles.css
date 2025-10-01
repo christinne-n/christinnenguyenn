@@ -96,8 +96,8 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 65px;
-  padding: 165px 80px;
+  margin: 40px;
+  padding: 165px 70px;
   max-width: 100%;
   overflow: hidden;
 }
